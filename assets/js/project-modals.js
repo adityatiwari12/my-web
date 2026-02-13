@@ -23,29 +23,32 @@ document.addEventListener('DOMContentLoaded', function () {
         if (modal) modal.classList.remove('active');
     }
 
-    // Add click event to project items (excluding video elements)
+    // Add click event to project items (including images)
     projectItems.forEach(item => {
-        // Prevent modal opening when clicking on videos
-        const videos = item.querySelectorAll('video');
-        videos.forEach(video => {
-            video.addEventListener('click', function (e) {
-                e.stopPropagation(); // Stop the click from bubbling up
+        // Get the parent project item element that has the data attribute
+        const projectItem = item.closest('.project-item');
+        
+        // Add click handler to the entire project item
+        if (projectItem) {
+            projectItem.addEventListener('click', function(e) {
+                // Only proceed if the click is not on a video element
+                if (!e.target.closest('video')) {
+                    const modalId = projectItem.getAttribute('data-project-modal');
+                    if (modalId) {
+                        e.preventDefault();
+                        openModal(modalId);
+                    }
+                }
             });
-        });
-
-        item.addEventListener('click', function (e) {
-            // Don't open modal if clicking on video or its container
-            if (e.target.tagName === 'VIDEO' ||
-                e.target.closest('video') ||
-                e.target.closest('figure.project-img')) {
-                return;
-            }
-
-            const modalId = this.getAttribute('data-project-modal');
-            if (modalId) {
-                openModal(modalId);
-            }
-        });
+            
+            // Make sure links inside the project item still work
+            const links = projectItem.querySelectorAll('a');
+            links.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.stopPropagation();
+                });
+            });
+        }
     });
 
     // Close modal on close button click
