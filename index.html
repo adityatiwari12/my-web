@@ -1,0 +1,1222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aditya Tiwari Portfolio</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/project-modals.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/aditya-avatar.png" alt="Aditya Tiwari" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Aditya Tiwari">Aditya Tiwari</h1>
+
+          <p class="title">AI Engineer | Full-Stack Developer</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:tiwariaditya005@gmail.com" class="contact-link">tiwariaditya005@gmail.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:+917648935563" class="contact-link">+91-7648935563</a>
+            </div>
+
+          </li>
+
+
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Indore, India</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://linkedin.com/in/adityatiwari08/" class="social-link" target="_blank" rel="noopener">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://github.com/adityatiwari08" class="social-link" target="_blank" rel="noopener">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfolio</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Publications</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Achievements</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            Aditya Tiwari is a Computer Science student with a primary focus on <strong>Artificial Intelligence, Machine
+              Learning, and Full-Stack Development</strong>. His work lies at the intersection of research and
+            real-world systems, where he builds production-oriented AI applications rather than just experimental
+            prototypes.
+          </p>
+
+          <p>
+            He has contributed to <strong>government-backed platforms</strong> focused on forest governance and
+            healthcare accessibility, built multiple AI-powered systems using computer vision and large language models,
+            and won several national-level hackathons. His research has resulted in <strong>four publications</strong>,
+            including two Best Paper awards at international conferences.
+          </p>
+
+          <p>
+            His technical interests revolve around applied AI systems, computer vision pipelines, large language models
+            and RAG systems, full-stack AI products, decision support systems, and real-time data integrations. He
+            prefers building end-to-end systems where machine learning models are integrated into scalable, usable
+            products rather than isolated experiments.
+          </p>
+        </section>
+
+        <!-- Resume Download Button -->
+        <div style="margin: 30px 0; text-align: center;">
+          <a href="./assets/Aditya-Tiwari-Resume.pdf" download="Aditya-Tiwari-Resume.pdf" style="display: inline-flex; align-items: center; gap: 10px; padding: 12px 24px; 
+                    background: linear-gradient(to bottom right, var(--orange-yellow-crayola), var(--vegas-gold)); 
+                    color: var(--smoky-black); font-weight: 600; border-radius: 8px; 
+                    text-decoration: none; transition: transform 0.2s ease;">
+            <ion-icon name="download-outline" style="font-size: 20px;"></ion-icon>
+            <span>Download Resume</span>
+          </a>
+        </div>
+
+
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">Technical Focus Areas</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-design.svg" alt="AI systems icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Applied AI Systems</h4>
+
+                <p class="service-item-text">
+                  Building production-ready AI applications with LLMs, RAG systems, and NLP pipelines for real-world
+                  impact.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-photo.svg" alt="Computer vision icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Computer Vision & ML</h4>
+
+                <p class="service-item-text">
+                  Developing object detection, image classification, and OCR systems using YOLOv8, OpenCV, and deep
+                  learning frameworks.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="Full-stack icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Full-Stack Development</h4>
+
+                <p class="service-item-text">
+                  Creating scalable web applications with React, Next.js, Node.js, FastAPI, and modern cloud
+                  infrastructure.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-app.svg" alt="Research icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Research & Publications</h4>
+
+                <p class="service-item-text">
+                  Contributing to academic research in AI optimization, computer vision, and sustainable technology with
+                  published papers.
+                </p>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+
+
+
+      </article>
+
+
+
+
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Bachelor of Technology in Computer Science and Information Technology
+              </h4>
+
+              <span>2023 — 2027</span>
+
+              <p class="timeline-text">
+                Acropolis Institute of Technology and Research, Indore<br>
+                CGPA: 7.08/10<br>
+                Focus: Data Structures, Machine Learning, Database Systems, Operating Systems, Computer Networks
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Higher Secondary Certificate (Class XII)</h4>
+
+              <span>2023</span>
+
+              <p class="timeline-text">
+                Sarafa Vidya Niketan<br>
+                Score: 83%
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="briefcase-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Major Projects</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">ASTITAVA & NyayaSetu - AI-Driven Forest Governance Platform</h4>
+
+              <span>December 2025 | Ministry of Tribal Affairs</span>
+
+              <p class="timeline-text">
+                Designed and implemented an OCR and NER pipeline to digitize 1,000+ government documents into the FRA
+                Atlas database, reducing manual processing time by 85%. Built a WebGIS-based Decision Support System
+                with spatial analytics and dashboards for policymakers.
+                <br><strong>Tech:</strong> Python, FastAPI, React, WebGIS, OCR, NER, PostgreSQL
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">HealthSaarthi - AI-Powered Healthcare Ecosystem</h4>
+
+              <span>September 2025 | Hackathon Winner</span>
+
+              <p class="timeline-text">
+                Built AI disease detection using OpenCV and YOLOv8 with 82% accuracy. Integrated multilingual voice
+                assistant using Vapi SDK and agentic AI workflows. Implemented BLE-based IoT health monitoring and 3D
+                health data visualizations using React and Three.js.
+                <br><strong>Tech:</strong> React, Three.js, Node.js, OpenCV, YOLOv8, BLE, Vapi SDK
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Stellar 3D - Interactive Solar System Experience</h4>
+
+              <span>2025</span>
+
+              <p class="timeline-text">
+                Created an immersive 3D solar system visualization with AI-based visual tours of astronomical phenomena
+                including solar and lunar eclipses. Utilized NASA data, Three.js for rendering, and Blender for 3D
+                object modeling.
+                <br><strong>Tech:</strong> Three.js, Blender, NASA APIs, React
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="skill">
+
+          <h3 class="h3 skills-title">Technical Skills</h3>
+
+          <div class="skills-category">
+            <h4 class="h4" style="color: var(--orange-yellow-crayola); margin-bottom: 15px;">Languages</h4>
+            <p class="timeline-text" style="margin-bottom: 20px;">
+              Python • JavaScript • TypeScript • C++ • SQL
+            </p>
+          </div>
+
+          <div class="skills-category">
+            <h4 class="h4" style="color: var(--orange-yellow-crayola); margin-bottom: 15px;">AI & Machine Learning</h4>
+            <p class="timeline-text" style="margin-bottom: 20px;">
+              Large Language Models (LLMs) • Retrieval-Augmented Generation (RAG) • Natural Language Processing •
+              Computer Vision • YOLOv8 • OpenCV • Prompt Engineering • LangChain • OCR • NER
+            </p>
+          </div>
+
+          <div class="skills-category">
+            <h4 class="h4" style="color: var(--orange-yellow-crayola); margin-bottom: 15px;">Frontend Development</h4>
+            <p class="timeline-text" style="margin-bottom: 20px;">
+              React.js • Next.js • TypeScript • Three.js • HTML5 • CSS3 • Tailwind CSS
+            </p>
+          </div>
+
+          <div class="skills-category">
+            <h4 class="h4" style="color: var(--orange-yellow-crayola); margin-bottom: 15px;">Backend Development</h4>
+            <p class="timeline-text" style="margin-bottom: 20px;">
+              Node.js • Express.js • FastAPI • Flask • RESTful API Design • PostgreSQL • MongoDB
+            </p>
+          </div>
+
+          <div class="skills-category">
+            <h4 class="h4" style="color: var(--orange-yellow-crayola); margin-bottom: 15px;">Cloud & DevOps</h4>
+            <p class="timeline-text" style="margin-bottom: 20px;">
+              AWS • Docker • CI/CD Pipelines • Git • GitHub
+            </p>
+          </div>
+
+          <div class="skills-category">
+            <h4 class="h4" style="color: var(--orange-yellow-crayola); margin-bottom: 15px;">Tools & Platforms</h4>
+            <p class="timeline-text">
+              Vapi SDK • Make.com • WebGIS • BLE & IoT • Data Pipelines • Analytics Dashboards
+            </p>
+          </div>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="people-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Leadership & Activities</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Vice Chair - IEEE Computer Society Student Branch</h4>
+
+              <span>2024 — Present</span>
+
+              <p class="timeline-text">
+                Leading technical workshops, hackathons, and research seminars for 200+ student members. Organizing
+                industry expert talks and collaborative projects focused on AI, machine learning, and emerging
+                technologies.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">International Service Director - Rotaract Club of Indore Posh</h4>
+
+              <span>2024 — Present</span>
+
+              <p class="timeline-text">
+                Coordinating international service projects and community outreach programs. Managing cross-cultural
+                collaborations and leading initiatives focused on education, healthcare, and sustainable development.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Technical Community Contributor</h4>
+
+              <span>2023 — Present</span>
+
+              <p class="timeline-text">
+                Active participant in hackathons, coding competitions, and open-source projects. Mentoring junior
+                students in AI/ML and full-stack development. Contributing to technical documentation and knowledge
+                sharing platforms.
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+
+      </article>
+
+
+
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="portfolio">
+
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>AI & Governance</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Healthcare</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>3D Visualization</button>
+            </li>
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>AI & Governance</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Healthcare</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>3D Visualization</button>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item active" data-filter-item data-category="ai & governance"
+              data-project-modal="astitava">
+              <div style="cursor: pointer;">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box" style="pointer-events: none;">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-1.jpg" alt="ASTITAVA & NyayaSetu" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">ASTITAVA & NyayaSetu</h3>
+
+                <p class="project-category">AI & Governance</p>
+
+              </div>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="healthcare">
+              <div>
+
+                <figure class="project-img">
+                  <video width="100%" height="auto" controls loop muted playsinline
+                    style="display: block; cursor: pointer;">
+                    <source src="./assets/videos/healthsaarthi-demo.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                  </video>
+                </figure>
+
+                <div data-project-modal="healthsaarthi" style="cursor: pointer;">
+                  <h3 class="project-title">HealthSaarthi</h3>
+                  <p class="project-category">Healthcare</p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="3d visualization">
+              <div>
+
+                <figure class="project-img">
+                  <video width="100%" height="auto" controls loop muted playsinline
+                    style="display: block; cursor: pointer;">
+                    <source src="./assets/videos/stellar3d-demo.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                  </video>
+                </figure>
+
+                <div data-project-modal="stellar3d" style="cursor: pointer;">
+                  <h3 class="project-title">Stellar 3D</h3>
+                  <p class="project-category">3D Visualization</p>
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+      <!-- Project Detail Modals -->
+
+      <!-- ASTITAVA Modal -->
+      <div class="modal-container" data-modal-container="astitava-modal">
+        <div class="overlay" data-overlay></div>
+        <section class="project-modal">
+          <button class="modal-close-btn" data-modal-close-btn>
+            <ion-icon name="close-outline"></ion-icon>
+          </button>
+          <div class="modal-content">
+            <h2 class="h2">ASTITAVA & NyayaSetu</h2>
+            <h4 style="color: var(--orange-yellow-crayola); margin-bottom: 20px;">AI-Driven Forest Governance and
+              Decision Support Platform</h4>
+
+            <div class="project-images"
+              style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 10px; margin-bottom: 20px;">
+              <img
+                src="https://media.licdn.com/dms/image/v2/D5612AQHW8qlEETUIdg/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1707367878566?e=2147483647&v=beta&t=zjF1PDi3A2dhLPB5GxeqHBY-qgmK_9tVCyL36sk8CK8"
+                alt="Forest Governance" style="width: 100%; border-radius: 8px;">
+              <img
+                src="https://www.researchgate.net/publication/377207843/figure/fig1/AS%3A11431281216177066%401704589873333/sualization-example-of-polygons-of-satellite-based-forest-inventory-in-A-British.jpg"
+                alt="Satellite Forest" style="width: 100%; border-radius: 8px;">
+            </div>
+
+            <h3 class="h3">Project Overview</h3>
+            <p class="timeline-text">ASTITAVA is an AI-powered WebGIS platform designed to digitize, analyze, and
+              visualize forest land governance data for tribal communities and government authorities. The system
+              addresses thousands of paper-based Forest Rights Act (FRA) documents that are slow to process and
+              difficult to analyze at scale.</p>
+
+            <h3 class="h3" style="margin-top: 20px;">Key Achievements</h3>
+            <ul class="timeline-text" style="list-style: disc; margin-left: 20px;">
+              <li><strong>Digitized 1,000+ documents</strong> with 85% reduction in processing time</li>
+              <li>OCR + NER pipeline for automated entity extraction</li>
+              <li>WebGIS mapping with spatial analytics</li>
+              <li>Decision support dashboards for policymakers</li>
+            </ul>
+
+            <h3 class="h3" style="margin-top: 20px;">Technical Stack</h3>
+            <p class="timeline-text"><strong>Frontend:</strong> React, TypeScript, WebGIS<br><strong>Backend:</strong>
+              FastAPI, PostgreSQL<br><strong>AI:</strong> OCR, NER models</p>
+          </div>
+        </section>
+      </div>
+
+      <!-- HealthSaarthi Modal -->
+      <div class="modal-container" data-modal-container="healthsaarthi-modal">
+        <div class="overlay" data-overlay></div>
+        <section class="project-modal">
+          <button class="modal-close-btn" data-modal-close-btn>
+            <ion-icon name="close-outline"></ion-icon>
+          </button>
+          <div class="modal-content">
+            <h2 class="h2">HealthSaarthi</h2>
+            <h4 style="color: var(--orange-yellow-crayola); margin-bottom: 20px;">AI-Enabled Unified Healthcare
+              Ecosystem</h4>
+
+            <div class="project-images"
+              style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 10px; margin-bottom: 20px;">
+              <img
+                src="https://cdn.dribbble.com/userupload/11022496/file/original-9acb392327c237919d8dd851868f8bda.png?resize=400x0"
+                alt="Healthcare UI" style="width: 100%; border-radius: 8px;">
+              <img src="https://www.scnsoft.com/images-for-demo/telehealth.png" alt="Telehealth"
+                style="width: 100%; border-radius: 8px;">
+            </div>
+
+            <h3 class="h3">Project Overview</h3>
+            <p class="timeline-text">HealthSaarthi is an AI-powered healthcare platform connecting patients, doctors,
+              and hospitals. Focuses on preventive healthcare, real-time monitoring, and intelligent diagnostics using
+              computer vision and conversational AI.</p>
+            <p class="timeline-text" style="color: var(--orange-yellow-crayola); font-weight: 600;">🏆 Won first place
+              in national hackathon</p>
+
+            <h3 class="h3" style="margin-top: 20px;">Core Features</h3>
+            <ul class="timeline-text" style="list-style: disc; margin-left: 20px;">
+              <li><strong>AI Disease Detection:</strong> YOLOv8 + OpenCV with 82% accuracy</li>
+              <li><strong>Multilingual Voice Assistant:</strong> Vapi SDK with agentic AI workflows</li>
+              <li><strong>IoT Health Monitoring:</strong> BLE integration with wearables</li>
+              <li><strong>3D Visualization:</strong> Three.js for real-time health metrics</li>
+            </ul>
+
+            <h3 class="h3" style="margin-top: 20px;">Technical Stack</h3>
+            <p class="timeline-text"><strong>Frontend:</strong> React, TypeScript, Three.js,
+              Tailwind<br><strong>Backend:</strong> Node.js<br><strong>AI:</strong> YOLOv8, OpenCV, Vapi
+              SDK<br><strong>IoT:</strong> BLE wearable integration</p>
+          </div>
+        </section>
+      </div>
+
+      <!-- Stellar3D Modal -->
+      <div class="modal-container" data-modal-container="stellar3d-modal">
+        <div class="overlay" data-overlay></div>
+        <section class="project-modal">
+          <button class="modal-close-btn" data-modal-close-btn>
+            <ion-icon name="close-outline"></ion-icon>
+          </button>
+          <div class="modal-content">
+            <h2 class="h2">Stellar 3D</h2>
+            <h4 style="color: var(--orange-yellow-crayola); margin-bottom: 20px;">Interactive Solar System Explorer with
+              AI-Driven Cinematic Tours</h4>
+
+            <div class="project-images"
+              style="display: grid; grid-template-columns: 1fr; gap: 10px; margin-bottom: 20px;">
+              <img src="https://i.sstatic.net/FhMMr.jpg" alt="Solar System" style="width: 100%; border-radius: 8px;">
+            </div>
+
+            <h3 class="h3">Project Overview</h3>
+            <p class="timeline-text">STELLAR 3D is an interactive, real-time 3D solar system explorer combining
+              physics-based orbital simulations, cinematic AI-generated tours, and a conversational space-knowledge
+              chatbot powered by NASA datasets.</p>
+
+            <h3 class="h3" style="margin-top: 20px;">Core Features</h3>
+            <ul class="timeline-text" style="list-style: disc; margin-left: 20px;">
+              <li><strong>Real-Time 3D Simulation:</strong> Physically accurate orbital mechanics with adjustable time
+                scale</li>
+              <li><strong>AI Cinematic Tours:</strong> Guided experiences of eclipses, alignments, and astronomical
+                events</li>
+              <li><strong>Eclipse Simulator:</strong> Solar/lunar eclipse visualization with shadow cones</li>
+              <li><strong>AI Chatbot:</strong> RAG-based assistant trained on NASA datasets</li>
+            </ul>
+
+            <h3 class="h3" style="margin-top: 20px;">Technical Stack</h3>
+            <p class="timeline-text"><strong>Frontend:</strong> Three.js, React<br><strong>Physics:</strong> Orbital
+              mechanics engine<br><strong>AI:</strong> RAG chatbot with NASA data<br><strong>Backend:</strong> Space
+              data retrieval API</p>
+
+            <h3 class="h3" style="margin-top: 20px;">Impact</h3>
+            <p class="timeline-text">Makes complex astronomical phenomena intuitive for students, educators, and space
+              enthusiasts through immersive visualization and AI-powered learning.</p>
+          </div>
+        </section>
+      </div>
+
+
+
+
+      <!--
+        - #PUBLICATIONS
+      -->
+
+      <article class="blog" data-page="publications">
+
+        <header>
+          <h2 class="h2 article-title">Publications & Research</h2>
+        </header>
+
+        <section class="blog-posts">
+
+          <ul class="blog-posts-list">
+
+            <li class="blog-post-item">
+              <a href="#" target="_blank">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-1.jpg" alt="K-dimensional Trees for Efficient Face Detection"
+                    loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Computer Vision</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2025-05">May 2025</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">K-dimensional Trees for Efficient Face Detection</h3>
+
+                  <p class="blog-text">
+                    TechRxiv Preprint. Proposed a K-d tree–based approach to optimize face detection, reducing
+                    computational complexity by 18% while maintaining 82% accuracy.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#" target="_blank">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-2.jpg" alt="Astitava: AI-Driven WebGIS Platform" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">AI & Governance</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2025-05">May 2025</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Astitava: AI-Driven WebGIS Platform for Transparent Land Governance
+                  </h3>
+
+                  <p class="blog-text">
+                    International Journal of AI and Technology Research. Presented architecture and implementation of an
+                    AI-enabled WebGIS governance platform for forest rights management.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#" target="_blank">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-3.jpg" alt="Renewable Energy in Cryptocurrency Mining" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Sustainable Technology</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2024-10">October 2024</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Integrating Renewable Energy into ASIC-based Cryptocurrency Mining</h3>
+
+                  <p class="blog-text">
+                    ICI3-2024 Conference. Proposed a hybrid renewable-powered mining framework demonstrating a potential
+                    35% reduction in energy consumption. <strong>Best Paper Award</strong>.
+                  </p>
+
+                </div>
+
+              </a>
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+      <!--
+        - #ACHIEVEMENTS
+      -->
+
+      <article class="achievements" data-page="achievements">
+
+        <header>
+          <h2 class="h2 article-title">Achievements</h2>
+          <p style="color: var(--light-gray); font-size: var(--fs-6); margin-top: 10px; line-height: 1.6;">
+            <strong style="color: var(--orange-yellow-crayola);">5× National Hackathon Winner</strong> •
+            <strong style="color: var(--orange-yellow-crayola);">2× Best Research Paper Awards</strong> •
+            <strong style="color: var(--orange-yellow-crayola);">Best Poster Award</strong> •
+            <strong style="color: var(--orange-yellow-crayola);">SIH 2025 National Finalist</strong> •
+            IEEE Vice Chair • Rotaract International Service Director
+          </p>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="trophy-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Hackathon Victories</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">🥇 AI Fusion Hackathon – Winner</h4>
+              <span>2025</span>
+              <p class="timeline-text">
+                Secured first position among multiple competing teams in a hackathon focused on building practical AI
+                solutions for real-world problems. Built a working end-to-end AI application combining computer vision
+                and intelligent automation.
+              </p>
+              <p class="timeline-text">
+                <strong>Key Highlights:</strong> Efficient model integration • Real-time processing • Clean system
+                architecture • Recognized for technical depth and practical impact
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">🥇 Hackathon 2.0 – Ministry of Tribal Affairs – Winner</h4>
+              <span>2025</span>
+              <p class="timeline-text">
+                First place in a national-level government hackathon for ASTITAVA platform addressing forest rights
+                claim processing and land governance. Built a WebGIS-based decision support system that digitized 1,000+
+                documents with AI pipeline.
+              </p>
+              <p class="timeline-text">
+                <strong>Impact:</strong> OCR + NER pipelines • WebGIS mapping • Analytics dashboards • Measurable
+                reduction in administrative processing time
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">🥇 Eureka IEEE Contest – Winner</h4>
+              <span>2025</span>
+              <p class="timeline-text">
+                Secured first position in IEEE-affiliated innovation contest emphasizing engineering innovation and
+                practical problem-solving. Combined AI models with full-stack interface to address real-world technical
+                challenge.
+              </p>
+              <p class="timeline-text">
+                <strong>Recognition:</strong> Strong system design • Quality implementation • Practical applicability •
+                Production-oriented software architecture
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">🥇 HealthSaarthi – Hackathon Winner</h4>
+              <span>2025</span>
+              <p class="timeline-text">
+                First place for comprehensive AI-driven healthcare ecosystem connecting patients, doctors, and
+                hospitals. Integrated computer vision diagnostics (82% accuracy), multilingual voice assistance, and
+                IoT-based monitoring.
+              </p>
+              <p class="timeline-text">
+                <strong>Technical Stack:</strong> YOLOv8 + OpenCV • Agentic AI voice workflows • BLE wearable
+                integration • Three.js 3D visualization
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">🥈 Innovik 5.0 National Hackathon – First Runner-Up</h4>
+              <span>2025</span>
+              <p class="timeline-text">
+                First runner-up at national-level innovation hackathon with participants from multiple engineering
+                institutions. Recognized for technical complexity, practical relevance, and system-level thinking.
+              </p>
+              <p class="timeline-text">
+                <strong>Evaluation:</strong> Strong technical foundation • Scalable architecture • Clear problem-solving
+                approach
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">🥈 Mediverse Hackathon – First Runner-Up</h4>
+              <span>2025</span>
+              <p class="timeline-text">
+                First runner-up in healthcare-focused hackathon. Built AI-enabled medical solution combining ML models
+                with user-friendly interface and scalable backend for early detection and streamlined patient
+                interaction.
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">🏆 Smart India Hackathon (SIH) 2025 – National Finalist</h4>
+              <span>January 2025</span>
+              <p class="timeline-text">
+                Selected among top teams nationally in India's largest innovation competition with thousands of
+                participating teams. Presented solution directly to senior government officials including the Education
+                Minister.
+              </p>
+              <p class="timeline-text">
+                <strong>Recognition:</strong> Featured in Government of India press release • Evaluated on innovation,
+                scalability, and implementation feasibility
+              </p>
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="ribbon-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Research & Academic Awards</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">🏅 Best Research Paper Award – NSSAFE 2025</h4>
+              <span>2025</span>
+              <p class="timeline-text">
+                Awarded for research demonstrating strong technical contribution, methodological clarity, and measurable
+                performance improvements in optimizing computational efficiency in computer vision systems.
+              </p>
+              <p class="timeline-text">
+                <strong>Recognition Factors:</strong> Novel technical approach • Quantifiable performance improvements •
+                Strong experimental validation
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">🏅 Best Research Paper Award – IEEE Ignite 2025</h4>
+              <span>2025</span>
+              <p class="timeline-text">
+                Received at international IEEE-affiliated conference for applied AI solution with practical relevance
+                and clear implementation details.
+              </p>
+              <p class="timeline-text">
+                <strong>Recognition Factors:</strong> Technical depth and clarity • Real-world applicability • Quality
+                of experimental results
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">🎖️ Best Poster Award – RAMSITA 2026</h4>
+              <span>2026</span>
+              <p class="timeline-text">
+                Awarded for most effective visual research presentation at international conference. Communicated
+                complex technical concepts in clear, structured, and visually engaging manner, standing out among
+                multiple international submissions.
+              </p>
+              <p class="timeline-text">
+                <strong>Recognition Factors:</strong> Clarity of research communication • Visual design and structure •
+                Technical significance
+              </p>
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="people-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Leadership Recognition</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">⚡ Vice Chair – IEEE Computer Society Student Branch</h4>
+              <span>2024 — Present</span>
+              <p class="timeline-text">
+                Leading technical initiatives for 200+ student members, organizing workshops, hackathons, and industry
+                expert sessions focused on emerging technologies.
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">🌍 International Service Director – Rotaract Club of Indore Posh</h4>
+              <span>2024 — Present</span>
+              <p class="timeline-text">
+                Coordinating international service projects and community outreach programs, managing cross-cultural
+                collaborations in education, healthcare, and sustainable development.
+              </p>
+            </li>
+
+          </ol>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #CONTACT
+      -->
+
+      <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d235013.74842646938!2d75.69903523125!3d22.724066050000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3962fcad1b410ddb%3A0x96ec4da356240f4!2sIndore%2C%20Madhya%20Pradesh%2C%20India!5e0!3m2!1sen!2sus!4v1647608789441!5m2!1sen!2sus"
+              width="400" height="300" loading="lazy"></iframe>
+          </figure>
+        </section>
+
+        <section class="contact-form">
+
+          <h3 class="h3 form-title">Let's build something meaningful</h3>
+
+          <p style="color: var(--light-gray); margin-bottom: 20px;">
+            Open to research internships, software engineering internships, and collaborations in AI, machine learning,
+            and full-stack systems.
+          </p>
+
+          <form action="#" class="form" data-form>
+
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+
+              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+            </div>
+
+            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+
+            <button class="form-btn" type="submit" disabled data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+
+          </form>
+
+        </section>
+
+      </article>
+
+    </div>
+
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/project-modals.js"></script>
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,112 @@
+/* Project Modal Styles */
+.project-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.8);
+  max-width: 900px;
+  width: 90%;
+  max-height: 85vh;
+  background: var(--eerie-black-2);
+  border-radius: 14px;
+  padding: 30px;
+  box-shadow: var(--shadow-5);
+  z-index: 5;
+  opacity: 0;
+  visibility: hidden;
+  transition: var(--transition-2);
+  overflow-y: auto;
+}
+
+.project-modal.active {
+  opacity: 1;
+  visibility: visible;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.project-modal .modal-close-btn {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: var(--border-gradient-onyx);
+  color: var(--white-2);
+  font-size: 24px;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.project-modal .modal-close-btn:hover {
+  background: var(--bg-gradient-jet);
+  color: var(--orange-yellow-crayola);
+}
+
+.project-modal .modal-content h2 {
+  margin-bottom: 10px;
+}
+
+.project-modal .modal-content h3 {
+  margin-top: 25px;
+  margin-bottom: 12px;
+  color: var(--white-2);
+}
+
+.project-modal .modal-content h4 {
+  margin-top: 15px;
+  margin-bottom: 8px;
+}
+
+.project-modal .modal-content p,
+.project-modal .modal-content ul {
+  margin-bottom: 15px;
+  line-height: 1.8;
+}
+
+.project-modal .modal-content ul {
+  padding-left: 20px;
+}
+
+.project-modal .modal-content ul li {
+  margin-bottom: 8px;
+}
+
+.project-modal .project-images {
+  margin: 20px 0;
+}
+
+.project-modal .project-images img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  object-fit: cover;
+}
+
+.modal-container .overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: hsla(0, 0%, 0%, 0.7);
+  z-index: 4;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: var(--transition-2);
+}
+
+.modal-container.active .overlay {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: all;
+}
+
+/* Make project titles clickable */
+.project-item[data-project-modal] {
+  cursor: pointer;
+}
+
+.project-item[data-project-modal]:hover .project-title {
+  color: var(--orange-yellow-crayola);
+}
