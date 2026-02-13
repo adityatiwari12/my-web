@@ -1,30 +1,44 @@
 <!DOCTYPE html>
-<!-- 
-  =============================================
-    PORTFOLIO WEBSITE - ADITYA TIWARI
-    Last Updated: February 2026
-  =============================================
-  This is a responsive portfolio website built with HTML5, CSS3, and JavaScript.
-  It features multiple sections including About, Resume, Portfolio, Publications, and more.
--->
 <html lang="en">
 
-  <!-- 
-    ===== HEAD SECTION =====
-    Contains metadata, title, and links to external stylesheets.
-  -->
-  <head>
-    <!-- ===== META TAGS & TITLE ===== -->
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aditya Tiwari Portfolio</title>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aditya Tiwari Portfolio</title>
 
-    <!-- 
-      ===== SIDEBAR SECTION =====
-      Contains profile picture, name, title, and contact information.
-      The sidebar is fixed on desktop and collapses to a hamburger menu on mobile.
+  <!--
+    - favicon
+  -->
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/project-modals.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
     -->
+
     <aside class="sidebar" data-sidebar>
 
       <div class="sidebar-info">
@@ -129,22 +143,12 @@
       - #main-content
     -->
 
-    <!-- 
-      ===== MAIN CONTENT AREA =====
-      This area contains all the main sections of the portfolio.
-      Only one section is visible at a time, controlled by the navigation.
-    -->
     <div class="main-content">
 
       <!--
         - #NAVBAR
       -->
 
-      <!-- 
-        ===== MAIN NAVIGATION =====
-        Navigation menu that allows switching between different sections.
-        The active section is highlighted based on the current view.
-      -->
       <nav class="navbar">
 
         <ul class="navbar-list">
@@ -185,11 +189,6 @@
         - #ABOUT
       -->
 
-      <!-- 
-        ===== ABOUT SECTION =====
-        Contains personal introduction and technical focus areas.
-        This is the default active section when the page loads.
-      -->
       <article class="about  active" data-page="about">
 
         <header>
@@ -325,11 +324,6 @@
         - #RESUME
       -->
 
-      <!-- 
-        ===== RESUME SECTION =====
-        Contains education, work experience, and technical skills.
-        Organized in a timeline format for better readability.
-      -->
       <article class="resume" data-page="resume">
 
         <header>
@@ -511,21 +505,9 @@
 
             <li class="timeline-item">
 
-              <h4 class="h4 timeline-item-title">Advisor- IEEE  Student Branch Acropolis</h4>
+              <h4 class="h4 timeline-item-title">Vice Chair - IEEE Computer Society Student Branch</h4>
 
-              <span>Jan 2026 — Present</span>
-
-              <p class="timeline-text">
-                Mentoring 150+ junior students across domains in field of Software Engineering, Gen AI tools, professionalism, communication skills.
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-            <h4 class="h4 timeline-item-title">Vice Chair - IEEE  Student Branch Acropolis</h4>
-
-              <span>Jan 2025 — Jan 2026</span>
+              <span>2024 — Present</span>
 
               <p class="timeline-text">
                 Leading technical workshops, hackathons, and research seminars for 200+ student members. Organizing
@@ -537,9 +519,9 @@
 
             <li class="timeline-item">
 
-              <h4 class="h4 timeline-item-title">International Service Director - Rotaract Club of Acropolis Royals</h4>
+              <h4 class="h4 timeline-item-title">International Service Director - Rotaract Club of Indore Posh</h4>
 
-              <span>July 2024 — July 2025</span>
+              <span>2024 — Present</span>
 
               <p class="timeline-text">
                 Coordinating international service projects and community outreach programs. Managing cross-cultural
@@ -577,11 +559,6 @@
         - #PORTFOLIO
       -->
 
-      <!-- 
-        ===== PORTFOLIO SECTION =====
-        Showcases major projects with images and descriptions.
-        Uses a filterable grid layout for different project categories.
-      -->
       <article class="portfolio" data-page="portfolio">
 
         <header>
@@ -790,6 +767,13 @@
             <p class="timeline-text">STELLAR 3D is an interactive, real-time 3D solar system explorer combining
               physics-based orbital simulations, cinematic AI-generated tours, and a conversational space-knowledge
               chatbot powered by NASA datasets.</p>
+            
+            <div style="margin: 15px 0 20px; display: flex; align-items: center;">
+              <ion-icon name="logo-github" style="font-size: 24px; margin-right: 10px; color: var(--light-gray);"></ion-icon>
+              <a href="https://github.com/adityatiwari12/Stellar3DSolarExplorer" target="_blank" style="color: var(--orange-yellow-crayola); text-decoration: none; font-weight: 500;">
+                View on GitHub
+              </a>
+            </div>
 
             <h3 class="h3" style="margin-top: 20px;">Core Features</h3>
             <ul class="timeline-text" style="list-style: disc; margin-left: 20px;">
@@ -820,11 +804,6 @@
         - #PUBLICATIONS
       -->
 
-      <!-- 
-        ===== PUBLICATIONS SECTION =====
-        Displays research papers and publications in a card-based layout.
-        Each card includes publication details and a brief description.
-      -->
       <article class="blog" data-page="publications">
 
         <header>
@@ -934,11 +913,6 @@
         - #ACHIEVEMENTS
       -->
 
-      <!-- 
-        ===== ACHIEVEMENTS SECTION =====
-        Highlights awards, hackathon wins, and leadership roles.
-        Organized in a timeline format with categorized sections.
-      -->
       <article class="achievements" data-page="achievements">
 
         <header>
@@ -1161,11 +1135,6 @@
         - #CONTACT
       -->
 
-      <!-- 
-        ===== CONTACT SECTION =====
-        Contact form and location information.
-        Includes an embedded Google Map and contact details.
-      -->
       <article class="contact" data-page="contact">
 
         <header>
@@ -1223,18 +1192,10 @@
     - custom js link
   -->
   <script src="./assets/js/project-modals.js"></script>
-  <!-- 
-    ===== JAVASCRIPT FILES =====
-    - project-modals.js: Handles the portfolio project modals
-    - script.js: Main JavaScript file for the portfolio
-  -->
-  <script src="./assets/js/project-modals.js"></script>
   <script src="./assets/js/script.js"></script>
 
-  <!-- 
-    ===== IONICONS =====
-    External icon library used throughout the website.
-    Provides scalable vector icons that can be customized with CSS.
+  <!--
+    - ionicon link
   -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
